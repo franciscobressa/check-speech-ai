@@ -140,8 +140,10 @@
         computed: {
             phonePlaceholder() {
                 return `+${
-                    this.selectedCountry === "en" ? "1" : "55"
-                } (11) 99999-9999`
+                    this.selectedCountry === "en"
+                        ? "1 (123) 123-3456"
+                        : "55 (12) 12345-1234"
+                }`
             },
             language() {
                 return store.state.language.selectedLanguage
